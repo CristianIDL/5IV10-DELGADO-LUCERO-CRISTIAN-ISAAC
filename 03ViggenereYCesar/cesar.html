@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cifrado Cesar</title>
+</head>
+<body>
+    <br>
+    <h1 class="title">Cifrado Cesar</h1>
+    <div class="a">
+        Este es un ejemplo del cifrado Cesar así bien kawaii, con estilo asi bien chido
+    </div>
+
+    <div class="a">
+        -Ingresa el texto que quieres cifrar-
+    </div>
+    <br>
+    <br>
+        
+    <textarea class="a" id="cadena" cols="30" rows="10" placeholder="Texto a cifrar">
+        
+    </textarea>
+    
+    <br>
+
+        <!--Aquí debería haber otro botón, pero no le supe y casi chillo-->
+    <div>
+        <input class="button" type="button" value="Cifrar" onclick="cifrar()">
+        <input class="button" type="button" value="Descifrar" onclick="descifrar()">
+    </div>
+        
+    
+    <br>
+        <!--Aquí va a spawnear el texto despues de que le de al botonsito-->
+    <div id="resultado">
+        <br>
+    </div>
+    <br>
+    <div class="a">
+        Prueba a descifrar el siguiente texto :D 
+        <br>
+        "sruidyru surih srqjdph dxqtxh vhd xq 6 :'3"
+    </div>
+
+    <br>
+    <form>
+        <input class="button" type="button" value="De regreso al Menú" onclick="history.go(-1)">
+    </form>
+    <script src="js/cesar.js"></script> 
+</body>
+</html>

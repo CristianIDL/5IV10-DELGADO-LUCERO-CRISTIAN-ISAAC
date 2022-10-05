@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cifrado Viggener</title>
+</head>
+<body>
+        <div class="vigge">
+            <a id="Vigenere"></a>
+            <br>
+            <h1 class="title">Cifrado Viggenere</h2>
+                <br>
+                <div class="a">Ingresa el texto que quieres cifrar</div>
+                <br>
+                <textarea id="cad" placeholder="Texto a cifrar" onkeypress="return letras(event)" class="textarea"></textarea>
+                <br>
+                <input type="password" id="clv" placeholder="Ingrese una key (una clave)"  onkeypress="return letras(event)">
+                <br>
+                <input type="button" value="Cifrar" onclick="encriptarTextoClaro()" class="button button1">
+
+                <input type="button" value="Descifrar" onclick="desencriptarTextoClaro()" class="button button1">
+                <br>
+                <br>
+                    <!--Aquí va a spawnear el texto despues de que le de al botonsito-->
+                <div id="resultado2">
+
+                </div>
+                <br>
+                <div class="a">
+                    Cuando descifres no cambies la clave porque si no, se muere y te decifra otra cosa unu
+                    <br>
+                    <div class="a">
+                        Prueba a descifrar "PNMIAYWG MELAD PLMRSD"
+                        <br>
+                        Con esta clave: ayudadios
+                    </div>
+                </div>
+                <br>
+
+                <form>
+                    <input class="button" type="button" value="De regreso al Menú" onclick="history.go(-1)">
+                </form>
+
+                <script src="js/viggenere.js"></script>
+        </div>
+</body>
+</html>

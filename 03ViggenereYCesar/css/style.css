@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #090211;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: Courier, "Lucida Console", monospace;
+}
+.title{
+    font-family: Courier, "Lucida Console", monospace;
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(0, 155, 70), rgb(2, 12, 34));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  background: -webkit-linear-gradient(rgb(0, 155, 70), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:link, a:visited {
+    background-color: rgb(13, 94, 67);
+    color: rgb(255, 255, 255);
+    border: 2px solid #C9BBCF;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(15, 93, 99); 
+    color: white; 
+    border: 2px solid #898AA6;
+  }
+
+.button {
+    background-color: rgb(13, 94, 67);
+    border: 3px solid #C9BBCF;;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 1px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: rgb(13, 94, 67); 
+    border: 2px solid #C9BBCF;
+    font-size: 20px;
+    color: white;  
+}
+
+.button1:hover {
+    background-color: #B7D3DF;
+    color: white;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(22, 2, 2);
+    border-radius: 4px;
+    color: white;
+    background-color: #928b9b;
+    font-size: 16px;
+    resize: none;
+  }
+
+input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+  
+input[type=password]:focus {
+    border: 3px solid #555;
+}
