@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado DES</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="title">
+        CIFRADO DES
+    </div>
+       
+    <div class="container">
+        Selecciona el archivo que deseas cifrar o descifrar
+        <br><br>
+        <input type="file" id="msg" value="seleccione archivo" />
+        <br><br>
+        Ingresa la clave para tu cifrado:
+        <br><br>
+        <input type="text" id="key" placeHolder="Clave" />
+        <br><br>
+        <input type="button" id="en" value="codificar"/>
+        
+        <input type="button" id="de" value="decodificar"/>
+        <br><br>
+        <textarea id="res" placeHolder="Resultado"></textarea>
+
+        <script src="js/des.js">
+            
+        </script>
+    </div>
+    
+</body>
+</html>

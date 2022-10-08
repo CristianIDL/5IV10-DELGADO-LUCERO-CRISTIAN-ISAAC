@@ -1,0 +1,19 @@
+*{
+    background-color: #16213E;
+    color: #F5F5F5;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    color: #E94560;
+    font-size: 48px;
+}
+
+.container{   
+    background-color: #0F3460;
+    margin: 2rem;
+    padding: 1rem;
+}
