@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Cifrado AES</title>
+</head>
+
+<body>
+    <div class="title">
+        <div class="message">Cifrado AES</div>
+    </div>
+    
+    <div class="margen">
+
+        <div class="message">Escoje el tamaño de la clave con la que vas a cifrar</div>
+        <br>
+
+        <form>
+            <input type="radio" name="tipo" value="128" id="uno" onclick="lenghtPassword()"><span id="suno">128</span>
+            <input type="text" value="" class="bgtxt" placeholder="Clave de 16" id="password1" maxlength="16" onkeypress="return check(event)">
+            <br>
+            <input type="radio" name="tipo" value="192" id="dos" onclick= "lenghtPassword()"><span id="sdos">192</span>
+            <input type="text" value="" class="bgtxt" placeholder="Clave de 24" id="password2" maxlength="24" onkeypress="return check(event)">
+            <br>    
+            <input type="radio" name="tipo" value="256" id="tres" onclick= "lenghtPassword()"><span id="stres">256</span>
+            <input type="text" value="" class="bgtxt" placeholder="Clave de 32" id="password3" maxlength="32" onkeypress="return check(event)">      
+        </form>
+        
+        <div class="message">Ingresa el texto que quieres cifrar y al presionar el botón obtendras el texto cifrado</div>
+        <br>
+
+        <textarea  cols="30" rows="10" id="texto" placeholder="Ingresa el texto que queres cifrar"></textarea>
+        <br>
+        <br>
+            <input type="button" value="Cifrar" onclick="guardarArchivoCifrado()" id="archivoc" class="btn blue">
+            <br>
+            <br>
+            <a href="./descifrado.html">Descifrar AES</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./js/aes.js" ></script>
+    <script>
+        function check(e)
+         {
+
+    tecla = (document.all) ? e.keyCode : e.which;
+
+    //Tecla de retroceso para borrar, siempre la permite
+    if (tecla == 8) {
+        return true;
+    }
+
+    // Patrón de entrada, en este caso solo acepta numeros y letras
+    patron = /[A-Za-z/ñÑ ]/;
+    tecla_final = String.fromCharCode(tecla);
+    return patron.test(tecla_final);
+    }
+    </script>
+</body>
+</html>
